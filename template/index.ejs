@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phượng nguuuu!</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100vw;
+        overflow-x: hidden;
+      }
+
+      ul {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .image_item {
+        box-shadow: 0 0 5px black;
+      }
+
+      .title {
+        margin-top: 32px;
+        margin-bottom: 45px;
+        text-align: center;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Welcome to Phượng Ngáo Site!</h1>
+
+    <ul>
+      <% photos.forEach(img => { %>
+      <li>
+        <img src="<%= img %>" alt="image" class="image_item" />
+      </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
